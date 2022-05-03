@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	m := NewModel("Hello nerds")
+	m := New()
 	p := tea.NewProgram(m)
 	p.EnterAltScreen()
 	if err := p.Start(); err != nil {
